@@ -1,0 +1,86 @@
+.main {
+    position: absolute;
+    top: 2em;
+    bottom: 2em;
+    left: 2em;
+    right: 2em;
+    border: 3px solid rgb(143, 31, 31);
+    border-radius: 30px;
+    height: 10;
+    padding: 1em;
+    text-align: center;
+}
+
+#section-btn-escaner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div-categories {
+    display: block;
+}
+
+.main-categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.btn-escaner {
+    background-color: rgb(19, 80, 19);
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.btn-intercanviar {
+    background-color: rgb(12, 2, 97);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.btn-tornar {
+    background-color: rgb(143, 31, 31);
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.modal-loading {
+    height: 500px;
+}
+
+.img-objecte {
+    width: 300px;
+}
+
+.img-categoria {
+    width: 100px;
+}
+
+.categoria, .objecte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(13, 15, 92);
+    border-radius: 30px;
+    margin: 1em;
+    cursor: pointer;
+}
+
+.modal-objectes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
