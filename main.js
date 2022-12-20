@@ -1,39 +1,7 @@
-const objectes = [
-    {
-        id: 0,
-        categoria: 0,
-        nom: "Ratolí",
-        img: "img/estoig.jpg"
-    },
-    {
-        id: 1,
-        categoria: 0,
-        nom: "Teclat",
-        img: "img/estoig.jpg"
-    },
-    {
-        id: 2,
-        categoria: 0,
-        nom: "Altaveu",
-        img: "img/estoig.jpg"
-    },
-    {
-        id: 3,
-        categoria: 0,
-        nom: "Cable USB",
-        img: "img/estoig.jpg"
-    },
-    {
-        id: 4,
-        categoria: 0,
-        nom: "Mòbil",
-        img: "img/estoig.jpg"
-    },
-]
-
 var count = 0;
 
 $( document ).ready(function() {
+
     $('#modalEscaner').on('shown.bs.modal', function(){
         setTimeout(()=>{
             $('#modalEscaner').modal('toggle');
@@ -88,11 +56,11 @@ $( document ).ready(function() {
 
 function mostrarObjeto() {  
     $( "#modal-objecte" ).html("");
-    objectes.filter((o)=>o.id==count).forEach((obj)=>{        
+    objectes.filter((o)=>o.id==orden[count]).forEach((obj)=>{        
         $( "#modal-objecte" ).append(`  
             <div class="modal-content modal-loading text-center p-3">
                 <div class="modal-body d-flex justify-content-center align-items-center">
-                    <img class="img-objecte" src="${obj.img}">
+                    <img class="img-objecte" src="./img/objectes/${obj.id}.png">
                 </div>
                 <div class="text-center">
                     <h2>${obj.nom}</h2>
@@ -113,7 +81,7 @@ function mostrarObjetosCategoria(cat) {
         $( "#div-objectes" ).append(`  
             <div class="objecte" obj-id="${obj.id}">
                 <div class="d-flex justify-content-center align-items-center">
-                    <img class="img-categoria" src="${obj.img}">
+                    <img class="img-categoria" src="./img/objectes/${obj.id}.png">
                 </div>
                 <h2>${obj.nom}</h2>
             </div> 
