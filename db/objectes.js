@@ -25,7 +25,7 @@ const objectes = [{
 },
 {
     "id": 6,
-    "nom": "Mando PS5",
+    "nom": "Mando PS4",
     "categoria": 0
 },
 {
